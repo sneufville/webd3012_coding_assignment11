@@ -1,9 +1,11 @@
+# official bsae image
 FROM node:20-alpine
 LABEL authors="sneufville"
-# set the working directory
-WORKDIR /app
 
-# copy package and lock file
+# set the working directory
+WORKDIR /neufville_simon_site
+
+# copy package and lock files
 COPY package.json .
 COPY package-lock.json .
 
@@ -16,8 +18,8 @@ COPY . .
 # expose port
 EXPOSE 6969
 
-# build the application
+# build the application using vite
 RUN npm run build
 
-# run the application
+# run the application in preview mode
 CMD ["npm", "run", "preview"]

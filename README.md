@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# WEBD 3011 Business Systems Build and Testing
+__Assignment #__: Coding Assignment: 11 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+__Prepared by__: Simon Neufville
 
-Currently, two official plugins are available:
+## Assignment specifics
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project uses `create vite@latest` with the `React/TypeScript` template which results in the creation of a React application (the expected output)
 
-## Expanding the ESLint configuration
+## How to run
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This assumes docker is installed and works correctly
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```shell
+# build the image (docker build . -t <name>) if needed
+# example below
+docker build . -t "sneufville-coding-assign11:v1.0"
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```shell
+# run the image
+docker run --name neufville_simon_coding_assignment11 -p 6969:6969 sneufville-coding-assign11:v1.0
+```
+
+The React application will be accessible at `http://localhost:6969`
