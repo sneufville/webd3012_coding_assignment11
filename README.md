@@ -19,7 +19,7 @@ docker build . -t "sneufville-coding-assign11:v1.0"
 
 ```shell
 # run the image
-docker run --name neufville_simon_coding_assignment11 -p 6969:6969 sneufville-coding-assign11:v1.0
+docker run --name neufville_simon_coding_assignment11 -dp 6969:6969 sneufville-coding-assign11:v1.0
 ```
 
 The React application will be accessible at `http://localhost:6969`
