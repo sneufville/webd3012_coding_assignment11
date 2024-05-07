@@ -3,6 +3,9 @@ __Assignment #__: Coding Assignment: 11
 
 __Prepared by__: Simon Neufville
 
+## GIT Repository Link
+https://github.com/sneufville/webd3012_coding_assignment11
+
 ## Assignment specifics
 
 This project uses `create vite@latest` with the `React/TypeScript` template which results in the creation of a React application (the expected output)
