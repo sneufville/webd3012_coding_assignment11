@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h1>Coding Assignment 11</h1>
+      <h1>Codin 1</h1>
       <p>Business Systems Build and Testing</p>
     </>
   )
